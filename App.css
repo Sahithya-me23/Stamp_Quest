@@ -1,0 +1,27 @@
+/* General App styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffe6f0, #ffccd5);
+  background-attachment: fixed; /* Ensures the gradient stays fixed during scrolling */
+  background-size: cover; /* Ensures the gradient covers the entire viewport */
+}
+
+h1 {
+  color: #34495e;
+}
+
+h2 {
+  color: #e44bae;
+}
+
+.page-content {
+  background-color: #ecf0f1;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+/* App.css */
+
+
