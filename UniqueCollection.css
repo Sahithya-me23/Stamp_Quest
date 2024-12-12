@@ -1,0 +1,136 @@
+/* UniqueCollection Styles */
+.unique-collection {
+  padding: 20px;
+  margin-left: 200px; /* Adjust if sidebar width differs */
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Button container - Fixed and aligned */
+.unique-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: sticky; /* Buttons remain in view during scroll */
+  top: 0; /* Stick at the top of the viewport */
+  z-index: 100; /* Ensure they are above cards but below the header/sidebar */
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb); /* Consistent background for the button bar */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+  border-radius: 8px;
+
+}
+
+/* Button styles */
+.unique-options button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  background-color:#db7bfb;
+  color:rgb(70, 69, 69);
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.unique-options button:hover {
+  background-color: #a7faef;
+  transform: scale(1.05);
+  color: rgb(71, 65, 65);
+}
+
+/* Form styling */
+.unique-add-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+
+.unique-add-form input,
+.unique-add-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.unique-add-form button {
+  padding: 10px 20px;
+  background-color: #f77a9e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.unique-add-form button:hover {
+  background-color: #db7bfb;
+}
+
+/* Collection Section */
+.unique-view-collection {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.unique-collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between the cards */
+  justify-content: center; /* Center the cards */
+  padding: 20px;
+  max-height: 500px; /* Set a max height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 10px;
+  border: 2px solid #e1f5fe; /* Light border for aesthetics */
+  background: linear-gradient(135deg, #ffe6f0, #ffccd5);
+  border-radius: 10px;
+}
+
+/* Card Styling */
+.unique-stamp-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unique-stamp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.unique-stamp-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.unique-stamp-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.unique-stamp-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.unique-stamp-card p strong {
+  color: #333;
+}

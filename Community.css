@@ -1,0 +1,15 @@
+.join-button{
+    background-color: rgb(86, 228, 233);
+}
+.join-button:hover{
+    background-color: blueviolet;
+    color:White;
+}
+.community-links {
+    margin-top: 20px;
+    background: linear-gradient(to right, #a8e6cf, #d1f7c4); /* pastel green-blue gradient */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 20px auto;
+  }

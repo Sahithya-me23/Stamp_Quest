@@ -1,0 +1,105 @@
+/* General styles for the page */
+.page-content {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4, #fbc2eb);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 50px auto;
+    transform: scale(0.98);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .page-content h1 {
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideInFromLeft 0.8s ease-out forwards 0.2s;
+  }
+  
+  .page-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideInFromRight 0.8s ease-out forwards 0.4s;
+  }
+  
+  .page-content i {
+    color: #007bff;
+    font-style: italic;
+  }
+  
+  /* Fade-in and Slide-up animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide-in animation for headings */
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Slide-in animation for paragraphs */
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Hover effects */
+  .page-content p:hover {
+    color: #333;
+    transform: translateX(5px);
+    transition: all 0.3s ease;
+  }
+  
+  .page-content i:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .page-content {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .page-content h1 {
+      font-size: 28px;
+    }
+  
+    .page-content p {
+      font-size: 16px;
+    }
+  }
+  

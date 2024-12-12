@@ -1,0 +1,85 @@
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(140deg, #ff9a9e, #fad0c4, #fbc2eb);
+    color: rgb(94, 89, 89);
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  .sidebar .logos {
+    text-align: center;
+    font-family:  cursive; /* Choose cursive and rounded fonts */
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color:black;
+  }
+  
+  .sidebar .nav-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar .nav-links li {
+    padding: 15px;
+  }
+  
+  .sidebar .nav-links li a {
+    text-decoration: none;
+    color: rgb(86, 83, 83);
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .sidebar .nav-links li a:hover {
+    background-color:  #db7bfb;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+  /* Content styling */
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  .page-content {
+    padding: 20px;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    max-width: 150px;  /* Ensures logo does not grow too large */
+    width: 100%;
+    height: auto;  /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the logo fits inside its container */
+    border-radius: 40px;
+  }
+
+  
+  /* Responsive Logo */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 150px; /* Smaller logo for mobile devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    max-width: 120px; /* Even smaller logo for very small screens */
+  }
+}
+
+  

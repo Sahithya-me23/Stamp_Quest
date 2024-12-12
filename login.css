@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e36e9f, #ffe0e6);
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+.login-container {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #fad0c4, #fbc2eb);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #d63384;
+    margin-bottom: 20px;
+}
+
+/* Input Styles */
+.input-container {
+    position: relative;
+    max-width: fit-content;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 40px;  /* Space for the icons */
+    border: 2px solid #d63384;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #b02268;
+}
+
+/* Icon Styles */
+.icon-user,
+.icon-lock {
+    position: absolute;
+    left: 15px; /* Proper left margin for icon */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #d63384;
+}
+
+/* Input padding to make space for icons */
+.input-container input {
+    padding-left: 40px; /* Ensures space for the icon */
+}
+
+/* Button Styles */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: #d63384;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background: rgb(230, 72, 230);
+    color: #b02268;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonHover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
